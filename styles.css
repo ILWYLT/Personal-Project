@@ -200,7 +200,7 @@ div > section {
 .capital{
     figure{
         position: relative;
-        background-image: url(./Capital_City.png);
+        background-image: url(./capital_city.png);
         background-repeat: no-repeat;
         background-size: 125%;
         background-position-x: -25px;
