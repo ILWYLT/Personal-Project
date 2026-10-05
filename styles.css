@@ -43,7 +43,7 @@ h4{
 header{
     padding: 0 0 200px 0;
     text-align: left;
-    background-image: url("./header.png");
+    background-image: url("./header.jpeg");
     background-position: center;
     background-size: 100%;
     display: flex;
@@ -58,7 +58,7 @@ h1{
 }
 nav{
     position: sticky;
-    z-index: 2;
+    z-index: 20;
     top: 0px;
     background: linear-gradient(to bottom right, #e8e8e8 0%,#ffffff 20%,#c0c0c0 50%,#8a8a8a 60%,#b8b8b8 80%,#e8e8e8 100%);
     border-radius: var(--curve-radius);
@@ -101,7 +101,7 @@ div > section {
 }
 
 .about{
-    background-image: url(./about.png);
+    background-image: url(./about.jpeg);
     background-size: 100%;
     background-position: center;
     height: 25rem;
@@ -157,7 +157,7 @@ div > section {
     }
 }
 .sites{
-    background-image: url(./forest.png);
+    background-image: url(./forest.jpeg);
     background-size: 100%;
     background-position: top;
     height: 30rem;
@@ -174,7 +174,7 @@ div > section {
     height: 400px; */
     margin: 10px;
     border: 3px solid lightgray;
-    background-color: white;
+    background-color: palegoldenrod;
     border-radius: var(--curve-radius);
     overflow: hidden;
     figure{
@@ -188,19 +188,48 @@ div > section {
         display: none;
     }
     &:hover{
-        z-index: 20;
-        h4, p {
+        z-index: 10;
+        h4 {
             display: block;
+            margin: 5px 0 10px 10px;
+            font-size: 20px;
+            font-family: sans-serif;
+        } 
+        p {
+            display: block;
+            margin: 0 10px;
         }
         transform: scale(1.1);
         transition: transform 0.3s ease;
         height: fit-content;
     }
 }
+.volcano{
+    figure{
+        position: relative;
+        background-image: url(./lava_lakes.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+        background-position-x: -25px;
+        height: 200px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        &::after{
+            position: absolute;
+            content: "October 2 2026";
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
 .capital{
     figure{
         position: relative;
-        background-image: url(./capital_city.png);
+        background-image: url(./capital_city.jpeg);
         background-repeat: no-repeat;
         background-size: 125%;
         background-position-x: -25px;
@@ -218,10 +247,53 @@ div > section {
         }
     }
 }
+.float{
+    figure{
+        position: relative;
+        background-image: url(./floating_island_village.jpeg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position-x: -25px;
+        height: 200px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        &::after{
+            position: absolute;
+            content: "October 8 2026";
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+.island{
+    figure{
+        position: relative;
+        background-image: url(./gramps.jpeg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position: top;
+        background-position-y: -25px;
+        height: 200px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        &::after{
+            position: absolute;
+            content: "October 30 2026";
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
 
 
 .bgshade{
-    background-image: url(./library.png);
+    background-image: url(./library.jpeg);
     background-size: 100%;
     background-position: top;
     height: 30rem;

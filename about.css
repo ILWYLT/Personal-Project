@@ -41,7 +41,7 @@ a{
 header{
     padding: 0 0 200px 0;
     text-align: left;
-    background-image: url("./header.png");
+    background-image: url("./header.jpeg");
     background-position: center;
     background-size: 100%;
     display: flex;
@@ -86,36 +86,64 @@ nav{
     }
 }
 .background{
-    min-height: 600px;
-    border: 1px solid red;
+    min-height: 45rem;
+    border-radius: 10px;
     position: relative;
-    background-color: #e8e8e8;
+    background-color: navy;
+    color: white;
     margin: 10px;
+    padding-top: 20px;
     text-align: center;
     h1{
-        margin: 20px;
+        margin-bottom: 20px;
     }
 }
 
 .container{
+    height: 40rem;
+    background-color: #e8e8e8;
+    color: black;
     display: grid;
     grid-template-columns : 200px 1fr;
 }
 aside{
-    border: 1px solid red;
     padding: 20px;
+    border-right: 5px solid gray;
     ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: 16px;
         list-style: none;
+        button{
+            border: none;
+            border-bottom: 1px solid gray;
+            font-size: 16px;
+            &:hover{
+                cursor: pointer;
+
+            }
+        }
     }
 }
 section{
-    border: 1px solid red;
-
+    padding: 20px;
+    text-align: left;
+    
+}
+h2, p{
+    margin-bottom: 10px;
+}
+p::first-letter{
+    padding-left: 40px ;
 }
 article{
-
+    display: none;
 }
 
+.visible{
+    display: block;
+}
 
 
 footer {
