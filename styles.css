@@ -28,6 +28,7 @@ html, body{
 }
 main{
     width: 1080px;
+    min-height: max-content;
     margin:auto;
     background-color: #F5EFE3;
 }
@@ -176,6 +177,7 @@ div > section {
     border: 3px solid lightgray;
     background-color: palegoldenrod;
     border-radius: var(--curve-radius);
+    position: relative;
     overflow: hidden;
     figure{
         position: relative;
@@ -203,6 +205,11 @@ div > section {
         transition: transform 0.3s ease;
         height: fit-content;
     }
+    a{
+            position: absolute;
+            inset: 0;
+            z-index: 11;
+    }
 }
 .volcano{
     figure{
@@ -217,7 +224,7 @@ div > section {
         border-top-right-radius: 7px;
         &::after{
             position: absolute;
-            content: "October 2 2026";
+            content: "17 Jan 2027";
             background-color: white;
             padding: 5px;
             border-radius: 5px;
@@ -238,7 +245,7 @@ div > section {
         border-top-right-radius: 7px;
         &::after{
             position: absolute;
-            content: "October 5 2026";
+            content: "Every month 15th";
             background-color: white;
             padding: 5px;
             border-radius: 5px;
@@ -259,7 +266,7 @@ div > section {
         border-top-right-radius: 7px;
         &::after{
             position: absolute;
-            content: "October 8 2026";
+            content: "10 Mar 2027";
             background-color: white;
             padding: 5px;
             border-radius: 5px;
@@ -281,8 +288,9 @@ div > section {
         border-top-right-radius: 7px;
         &::after{
             position: absolute;
-            content: "October 30 2026";
-            background-color: white;
+            content: "Halloween, 30 Oct 2026";
+            background-color: black;
+            color: orange;
             padding: 5px;
             border-radius: 5px;
             right: 0;
