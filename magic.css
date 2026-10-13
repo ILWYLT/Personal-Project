@@ -86,6 +86,106 @@ nav{
     }
 }
 
+.top{
+    text-align: center;
+    h1{
+        margin: 20px 0 10px;
+    }
+    p{
+        margin: 10px;
+    }
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 463px;
+    .banner-video{
+        position: absolute;
+        width: 100%;
+    }
+    .banner-content{
+        top: 40%;
+        left: 5%;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.elements{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    .element {
+        border-radius: 10px;
+        *{
+            top: 40%;
+            left: 5%;
+        }
+    }
+    .site{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+    }
+    .image-container{
+        height: 280px;
+        overflow: hidden;
+    }
+    img{
+        width: 30rem;
+        border: 3px solid black;
+    }
+    h3{
+        position: relative;
+        font-size: 40px;
+        font-weight: 300;
+        font-family: "Mystery Quest", system-ui;
+
+    }
+    p{
+        display: block;
+        position: relative;
+        font-family: "Mystery Quest", system-ui;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+    }
+    .fire{
+        background-image: url(./fire.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+        width: 100%;
+        color: #faa;
+    }
+    .earth{
+        background-image: url(./earth.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        color: #ffa;
+    }
+    .water{
+        background-image: url(./water.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        color: #aaf;
+    }
+    .wind{
+        background-image: url(./wind.jpeg);
+        background-size: 100%;
+        width: 100%;
+        color: #afa;
+    }
+}
 
 footer {
     padding: 30px 10px 10px;
@@ -131,7 +231,6 @@ footer {
 .list-head, .s-box{
     margin-bottom: 20px;
 }
-
 #red{
     background-color: red;
 }

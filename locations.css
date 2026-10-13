@@ -19,7 +19,6 @@
 
     --bg-outline1: polygon(
         65% 30%,
-
         95% 10%,
         80% 100%,
         50% 100%
@@ -165,36 +164,36 @@ nav{
         .q1 { 
             top: 0; 
             left: 0; 
-            background-image: url(./lava_lakes.jpeg);
-            background-size: 200%;
             transform: rotate(180deg);
+            background-image: url(./gramps.jpeg);
+            background-position: right;
+            background-size: 145%;
             background-repeat: no-repeat;
         }
         .q2 {
             top: 0; 
             right: 0; 
+            transform: rotate(-90deg);
             background-image: url(./bell.jpeg);
             background-size: 120%;
             background-position: left;
-            transform: rotate(-90deg);
             background-position: bottom;
             background-repeat: no-repeat;
         }
         .q3 { 
             bottom: 0; 
             left: 0; 
+            transform: rotate(90deg);
             background-image: url(./floating_island_village.jpeg);
             background-size: 200%;  
-            transform: rotate(90deg);
             background-position: left;
             background-repeat: no-repeat;
         }
         .q4 {
             bottom: 0; 
             right: 0; 
-            background-image: url(./gramps.jpeg);
-            background-position: right;
-            background-size: 145%;
+            background-image: url(./lava_lakes.jpeg);
+            background-size: 200%;
             background-repeat: no-repeat;
         }
     }
@@ -226,10 +225,11 @@ nav{
             background-repeat: no-repeat;
         }
         .banner1 , .banner5{
-            background-image: url(./resort_back.jpeg);
-            background-position: center;
+            background-image: url(./volcano_village.jpeg);
+            background-position: top;
             background-size: 100%;
             /* display: none; */
+            
         }
         .banner2{
             background-image: url(./floating_island_village.jpeg);
@@ -238,8 +238,8 @@ nav{
             /* display: none; */
         }
         .banner3{
-            background-image: url(./volcano_village.jpeg);
-            background-position: top;
+            background-image: url(./resort_back.jpeg);
+            background-position: center;
             background-size: 100%;
             /* display: none; */
         }
@@ -249,6 +249,7 @@ nav{
             background-position-y: -20px;
             background-size: 100%;
             /* display: none; */
+            
         }
     }
 }
@@ -258,6 +259,8 @@ article{
     h1{
         text-align: center;
         margin-top: 10px;
+        font-family: "Mystery Quest", system-ui;
+        font-size: 40px;
     }
     .pg-img1, .pg-img2{
         width: 500px;

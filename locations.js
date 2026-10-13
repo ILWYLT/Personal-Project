@@ -11,84 +11,62 @@ const params = new URLSearchParams(window.location.search);
 const stepParam = params.get('step');
 
 const locations = [
-    {   name: "Meridian Island",
-        fig1: "./resort_front.jpeg",
-        figcap1: "In Meridian Island, there's a lot of beatiful nature, high-end resort, and also the ever changing view since the island is always moving.",
+    {   name: "~~~ Volcanic Village ~~~",
+        fig1: "./lava_lakes.jpeg",
+        figcap1: "The volcanoes and lava lakes. It is normally extremely dangerous in the real world, but with our magic protection, it is relatively safe within our world.",
 
-        fig2: "./resort-inside.jpeg",
-        figcap2: "Our staff will welcome you wholeheartedly and work hard to keep the establishment clean and tidy.",
+        fig2: "./vol_smith.jpeg",
+        figcap2: "The smithery here in this village is one of the best in the world, it is one of the villages with the most condensed amount of blacksmiths in existence, and so blacksmiths keep competing with each other, which means it also offers the best weapons and armor you can find.",
 
-        fig3: "./resort_hotel.jpeg",
-        figcap3: "You can also rent a hotel room within the resort and enjoy a simple 5-star hotel level of enjoyment",
+        fig3: "./vol-spring.jpeg",
+        figcap3: "Volcanic Village is also one of the best spots for natural hot springs. The hot springs are good in quality, quantity, and variety.",
 
-        hisFig: "./gramps.jpeg",
-        hisFigCap: "Historically, Meridian Island is an island on a leviathan's back. 'gramps' is one of the passive leviathans that dresses his shell to blend in with the landscape, so it knows earth and nature magic to change the environment on his back, so the island landscape will also change periodically.",
+        hisFig: "./vol_crystal.jpeg",
+        hisFigCap: "The village was first created because of this rare fire crystal that is only found within the volcanic region. It can be made into weapons, armor, accessories, and even charms and magic items. So it started as a camping site with lots of smiths living together, and eventually this village was born.",
 
-        cultFig: "./resort_beach_house.jpeg",
-        cultFigCap: "Since you'll be living on his back, the golden rule is to never harm the ground, the mountains or the trees. Our staff strictly forbids any form of fighting happening within the island, or you might be banished from the island permanently.",
+        cultFig: "./vol_dragon.jpeg",
+        cultFigCap: "While the village mostly consist of blacksmiths. There is also a fire dragon that roams the region. But do not panic, the fire dragon is sentient and will not attack randomly. The culture here is to respect the dragon and the people, or else…",
 
-        tDate: "28 Oct - 1 Nov 2026",
-        tps: "HKD $6,999",
-        tpf: "HKD $4,999",
+        tDate: "17–18 Jan 2027",
+        tps: "HKD $4,999",
+        tpf: "HKD $3,999",
         tph: "HKD $5,999",
-        tpm: "HKD $3,999",
+        tpm: "HKD $2,499",
         tInfo: [
             [   //Day 1
-                [   //PM
-                    "Tribal Visit"
-                ]
+                [ //PM
+                    "Village Exploration",
+                    "Blacksmith and HotSpring"
+                ],
             ],
             [   //Day 2
-                [   //AM
-                    "Resort Free Time"
-                ],
-                [   //PM  
-                    "Water Sports"
-                ]
-            ],
-            [   //Day 3
-                [   //AM
-                    "Resort Free Time"
-                ],
-                [   //PM
-                    "Halloween Night"
-                ]
-            ],
-            [   //Day 4
-                [   //AM
-                    "Resort Free Time"
-                ],
-                [   //PM
-                    "Halloween Night"
-                ]
-            ],
-            [   //Day 5
-                [   //AM
-                    "Resort Free Time"
-                ]
+                [//AM
+                    "Dragon meeting",
+                    "Free Time"
+                    ]
             ]
         ]
     },
-    {   name: "Capital City",
+    {   name: "~~~ Capital City ~~~",
         fig1: "./castle.jpeg",
-        figcap1: "Visit the Grand Castle and feel the grand scale of the kindgom's wealth, luxury, and power.",
+        figcap1: "Visit the Grand Castle and feel the grand scale of the kingdom's wealth, luxury, and power.",
 
         fig2: "./grand_church.jpeg",
         figcap2: "The Church in the Capital City is the largest church you can find in this kingdom.",
 
         fig3: "./cap_adventurer.jpeg",
-        figcap3: "Sign up to be an adventurer and you can accept quests to fight monsters, help citizens, and a lot more services provided within the largest adventurer guild in the kingdom.",
+        figcap3: "Sign up to be an adventurer and you can accept quests to fight monsters, help citizens, and use many more services provided within the largest adventurer guild in the kingdom.",
 
         hisFig: "./cap_throne.jpeg",
-        hisFigCap: "The Captial City has been the landmark of this kingdom for centries. The barracks and adventurer guild both have been training soldiers and adventurers for both combat and magic training, so this kingdom is the only kingdoms that is the safest place to visit with the most history, and the largest territorial expanse across the board.",
+        hisFigCap: "The Captial City has been the landmark of this kingdom for centuries. The barracks and adventurer guild have long trained soldiers and adventurers in both combat and magic. making this kingdom the safest place to visit, with the most history and the largest territorial expanse overall.",
 
         cultFig: "./cap_market.jpeg",
-        cultFigCap: "Since the kingdom focuses both physical skills and magical abilities, so even regular citizens can learn magic for daily convenience. If you wish to find the perfect place to begin your own adventure, the Capital City will be the best spot for you to start.",
+        cultFigCap: "Since the kingdom focuses on both physical skills and magical abilities, even regular citizens can learn magic for daily convenience. If you wish to find the perfect place to begin your own adventure, the Capital City is the best place to start.",
 
         tDate: "Every 15th of the month.",
         tps: "HKD $2,999",
         tpf: "HKD $1,999",
-        tph: "HKD $4,999 (sponsered by the king)",
+        tph: "HKD $4,999 (sponsored by the king)",
         tpm: "HKD $1,499",
         tInfo: [
             [   //Day 1
@@ -133,57 +111,79 @@ const locations = [
             ]
         ]
     },
-    {   name: "Volcanic Village",
-        fig1: "./lava_lakes.jpeg",
-        figcap1: "The dangerous yet rare sight to behold. It is normally extremely dangerous in the real world, but it will be relatively safe within our world, so it will be sights you can hardly find in the real world.",
+    {   name: "~~~ Meridian Island ~~~",
+    fig1: "./resort_front.jpeg",
+    figcap1: "In Meridian Island, there's a lot of beautiful nature, high-end resorts, and ever-changing views since the island is always moving.",
 
-        fig2: "./vol_smith.jpeg",
-        figcap2: "The smithery here in this village is one of the best in the world, it is one the village with the most condensed amount of blacksmith in existance, and so blacksmiths keeps competiting with each other, so it also provides the best weapons and armor you can find.",
+    fig2: "./resort-inside.jpeg",
+    figcap2: "Our staff will welcome you wholeheartedly and work hard to keep the establishment clean and tidy.",
 
-        fig3: "./vol-spring.jpeg",
-        figcap3: "Volcanic Village also one of the best spots for natural hotspring. The hotsprins are good in both quality, qunatity, and varienty.",
+    fig3: "./resort_hotel.jpeg",
+    figcap3: "You can also rent a hotel room within the resort and enjoy a simple 5-star hotel-level experience.",
 
-        hisFig: "./vol_crystal.jpeg",
-        hisFigCap: "The village first created because of this rare fire crystal that only found within the volcanic region. It can be made into weapon, armor, accessories, and even charms and magic items. So it started as a camping site with lots of smiths to live together, and eventually this village is born.",
+    hisFig: "./gramps.jpeg",
+    hisFigCap: 'Historically, Meridian Island is an island on a leviathan`s back. "Gramps" is one of the passive leviathans that disguises his shell to blend in with the landscape, so he knows earth and nature magic to change the environment on his back, meaning the island landscape will also change periodically.',
 
-        cultFig: "./vol_dragon.jpeg",
-        cultFigCap: "While the village is mostly consist of blacksmiths. There is also a fire dragon that roams the region. But do not panick, the fire dragon is sentient and will not attack randomly. And the culture is to respect the dragon and the people there, or else...",
+    cultFig: "./resort_beach_house.jpeg",
+    cultFigCap: "Since you'll be living on his back, the golden rule is to never harm the ground, the mountains, or the trees. Our staff strictly forbids any form of fighting from happening on the island, or you might be banished from the island permanently.",
 
-        tDate: "17 Jan 2027 - 18 Jan 2027",
-        tps: "HKD $4,999",
-        tpf: "HKD $3,999",
-        tph: "HKD $5,999",
-        tpm: "HKD $2,499",
-        tInfo: [
-            [   //Day 1
-                [ //PM
-                    "Village Exploration",
-                    "Blacksmith and HotSpring"
-                ],
+    tDate: "28 Oct - 1 Nov 2026",
+    tps: "HKD $6,999",
+    tpf: "HKD $4,999",
+    tph: "HKD $5,999",
+    tpm: "HKD $3,999",
+    tInfo: [
+        [   //Day 1
+            [   //PM
+                "Tribal Visit"
+            ]
+        ],
+        [   //Day 2
+            [   //AM
+                "Resort Free Time"
             ],
-            [   //Day 2
-                [//AM
-                    "Dragon meeting",
-                    "Free Time"
-                    ]
+            [   //PM  
+                "Water Sports"
+            ]
+        ],
+        [   //Day 3
+            [   //AM
+                "Resort Free Time"
+            ],
+            [   //PM
+                "Halloween Night"
+            ]
+        ],
+        [   //Day 4
+            [   //AM
+                "Resort Free Time"
+            ],
+            [   //PM
+                "Halloween Night"
+            ]
+        ],
+        [   //Day 5
+            [   //AM
+                "Resort Free Time"
             ]
         ]
+    ]
     },
-    {   name: "Floating Islands",
+    {   name: "~~~ Floating Islands ~~~",
         fig1: "./float_building.jpeg",
-        figcap1: "The unqiue windmill based buildings give you a country vibe while you are soaring above land.",
+        figcap1: "The unique windmill-based buildings give you a country vibe while you are soaring above land.",
 
         fig2: "./float_platform.jpeg",
         figcap2: "The Viewing Platform is where you can see the world from this elevated vantage point.",
 
         fig3: "./float_runway.jpeg",
-        figcap3: "Want To experience flying? There's a lot of serivce to try and take off and soar in the sky. Whether it's through glider, magic, flying boots, or even just a temporary potion that gies you wings. There's even a aerial race happening one a year.",
+        figcap3: "Want to experience flying? There are a lot of services to try and take off and soar in the sky. Whether it's through a glider, magic, flying boots, or even just a temporary potion that gives you wings. There's even an aerial race happening once a year.",
 
         hisFig: "./float_crystal.jpeg",
-        hisFigCap: "The reason why the islands can float above land? It's because of these crystals. The crystal is are infused with wind and spatial magic to able to lift the islands above ground. The citizens eveneutally learn how to configurate the crystals to make them function more effciently, so, the consumption is slower than the natural regeneration of these aerolite crystals.",
+        hisFigCap: "The reason why the islands can float above land? It's because of these crystals. The crystals are infused with wind and spatial magic to be able to lift the islands above ground. The citizens eventually learn how to configure the crystals to make them function more efficiently, so consumption is slower than the natural regeneration of these aerolite crystals.",
 
         cultFig: "./float_cult.jpeg",
-        cultFigCap: "The floating island are natural homes of the angles. So the floating island is where you just enjoy the breeze and good vibes. Angels are wholesome free spirited people with wings, but if they are attacked, their aerial combat is where they excel at, and it's used for both escape danger and flank oppoents from deadly angles. Try to be kind to them, and they will treat you twice as kind.",
+        cultFigCap: "The floating islands are natural homes of the angels. So the floating islands are where you just enjoy the breeze and good vibes. Angels are wholesome free-spirited people with wings, but if they are attacked, their aerial combat is where they excel, and it's used for both escaping danger and flanking opponents from deadly angles. Try to be kind to them, and they will treat you twice as kind.",
 
         tDate: "10 - 12 Mar 2027",
         tps: "HKD $7,999",

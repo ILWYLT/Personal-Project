@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./magic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" ?integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Magic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Mystery+Quest&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
 </head>
 <body>
     <main>
@@ -16,7 +19,7 @@
         <nav>
             <ul>
                 <li> Isekai Travels </li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./locations.html">Locations</a></li>
                 <li><a href="./magic.html">Magic</a></li>
@@ -26,72 +29,72 @@
 
         <div class="top">
             <h1>Magic</h1>
-            <p>Learn about our magic system and test what affinity you have.</p>
+            <p>Learn about our magic system before you come to our world.</p>
         </div>
 
-    <h1>Magic Affinity Test</h1>
-    <p>Answer truthfully — the ether listens.</p>
+        <div class="banner">
+            <video class="banner-video" autoplay muted loop playsinline preload="auto" disablepictureinpicture>
+            <source src="./magic_vid.mp4" type="video/mp4">
+            </video>
 
-    <form id="affinityForm">
+            <div class="banner-content">
+                <h2>Our Magic System is Simple.</h2>
+                <p>Check below for more details.</p>
+            </div>
+        </div>
 
-        <!-- Q1 -->
-        <fieldset>
-        <legend>1. Adjust the slider to however you like.</legend>
-        <input type="range" id="q1Slider" name="q1Slider" min="0" max="100" step="1" value="24">
-        </fieldset>
+        <div class="elements">
+            <div class="element fire" id="fire">
+                <h3>Fire</h3>
+                <p>The most damaging element</p>
+            </div>
+            
+            <div class="site" id="sug-vol">
+                <p>Suggest City: Volcanic Village</p>
+                <a href="./locations.html">
+                    <img src="./lava_lakes.jpeg" alt="">
+                </a>
+            </div>
 
-        <!-- Q2 -->
-        <label for="color">2. Pick your favorite color.</label>
-        <select name="color" id="color" required>
-            <option value="">-- Please choose a color --</option>
-            <option value="red" class="colors" id="red">red</option>
-            <option value="blue" class="colors" id="blue">blue</option>
-            <option value="green" class="colors" id="green">green</option>
-            <option value="brown" class="colors" id="brown">brown</option>
-            <option value="sky-blue" class="colors" id="sky-blue">sky blue</option>
-            <option value="yellow" class="colors" id="yellow">yellow</option>
-            <option value="lime" class="colors" id="lime">lime</option>
-            <option value="pink" class="colors" id="pink">pink</option>
-            <option value="white" class="colors" id="white">white</option>
-            <option value="black" class="colors" id="black">black</option>
-            <option value="gray" class="colors" id="gray">gray</option>
-            <option value="light-gray" class="colors" id="light-gray">light gray</option>
-        </select>
+            <div class="element earth" id="earth">
+                <h3>Earth</h3>
+                <p>The most sturdy element</p>
+            </div>
 
-        <!-- Q3 -->
-        <fieldset>
-        <legend>3. How smart do you think you are? (1–10)</legend>
+            <div class="site" id="sug-cap">
+                <p>Suggest City: Capital City</p>
+                <a href="./locations.html?step=1">
+                    <img src="./capital_city.jpeg" class="image" alt="">
+                </a>
+            </div>
 
-        <label><input type="radio" name="selfSmart" value="1"> 1</label>
-        <label><input type="radio" name="selfSmart" value="2"> 2</label>
-        <label><input type="radio" name="selfSmart" value="3"> 3</label>
-        <label><input type="radio" name="selfSmart" value="4"> 4</label>
-        <label><input type="radio" name="selfSmart" value="5"> 5</label>
-        <label><input type="radio" name="selfSmart" value="6"> 6</label>
-        <label><input type="radio" name="selfSmart" value="7"> 7</label>
-        <label><input type="radio" name="selfSmart" value="8"> 8</label>
-        <label><input type="radio" name="selfSmart" value="9"> 9</label>
-        <label><input type="radio" name="selfSmart" value="10"> 10</label>
-        </fieldset>
+            <div class="element water" id="water">
+                <h3>Water</h3>
+                <p>The most fluent element</p>
+            </div>
 
-        <!-- Q4 -->
-        <fieldset>
-        <legend>4. How smart do others think you are? (1–10)</legend>
+            <div class="site" id="sug-gramps">
+                <p>Suggest City: Meridian Island</p>
+                <div class="image-container">
+                    <a href="./locations.html?step=2">
+                        <img src="./gramps.jpeg" alt="">
+                    </a>
+                </div>
+            </div>
 
-        <label><input type="radio" name="othersSmart" value="1"> 1</label>
-        <label><input type="radio" name="othersSmart" value="2"> 2</label>
-        <label><input type="radio" name="othersSmart" value="3"> 3</label>
-        <label><input type="radio" name="othersSmart" value="4"> 4</label>
-        <label><input type="radio" name="othersSmart" value="5"> 5</label>
-        <label><input type="radio" name="othersSmart" value="6"> 6</label>
-        <label><input type="radio" name="othersSmart" value="7"> 7</label>
-        <label><input type="radio" name="othersSmart" value="8"> 8</label>
-        <label><input type="radio" name="othersSmart" value="9"> 9</label>
-        <label><input type="radio" name="othersSmart" value="10"> 10</label>
-        </fieldset>
+            <div class="element wind" id="wind">
+                <h3>Wind</h3>
+                <p>The fastest element</p>
+            </div>
 
-        <button type="submit">Reveal my affinity</button>
-    </form>
+            <div class="site" id="sug-float">
+                <p>Suggest City: Floating Islands</p>
+                <a href="./locations.html?step=3">
+                    <img src="./floating_island_village.jpeg" alt="">
+                </a>
+            </div>
+
+        </div>
 
         <footer id="footer">
             <ul class="whole-list">
@@ -107,15 +110,17 @@
                 </ul>
                 <ul>
                     <li class="list-head"><a href="./locations.html">sites</a></li>
-                    <li><a href="./locations.html?step=2">volcanic village</a></li>
+                    <li><a href="./locations.html">volcanic village</a></li>
                     <li><a href="./locations.html?step=1">capital city</a></li>
                     <li><a href="./locations.html?step=3">floating island</a></li>
-                    <li><a href="./locations.html?step=0">turtle island</a></li>
+                    <li><a href="./locations.html?step=2">meridian island</a></li>
                 </ul>
                 <ul>
-                    <li class="list-head">magic</li>
-                    <li><a href="./magic.html">magic elements</a></li>
-                    <li><a href="#">magic testing</a></li>
+                    <li class="list-head"><a href="./magic.html">magic</a></li>
+                    <li><a href="./magic.html#fire">fire</a></li>
+                    <li><a href="./magic.html#earth">earth</a></li>
+                    <li><a href="./magic.html#water">water</a></li>
+                    <li><a href="./magic.html#air">air</a></li>
                 </ul>
                 <ul>
                     <li class="list-head"><a href="./contact.html">contact us</a></li>
@@ -127,5 +132,6 @@
             <p><i class="fa-regular fa-copyright"></i>copyrighted. All rights reserved. Images are generated by AI, please do not take this seriously.</p>
         </footer>
     </main>
+    <script src="./magic.js"></script>
 </body>
 </html>

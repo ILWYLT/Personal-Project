@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./magic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" ?integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Magic</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="./icon.png" class="icon">
+            <h1>Isekai Travels</h1>
+        </header>
+        <nav>
+            <ul>
+                <li> Isekai Travels </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./locations.html">Locations</a></li>
+                <li><a href="./magic.html">Magic</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="top">
+            <h1>Magic</h1>
+            <p>Learn about our magic system and test what affinity you have.</p>
+        </div>
+
+    <h1>Magic Affinity Test</h1>
+    <p>Answer truthfully — the ether listens.</p>
+
+    <form id="affinityForm">
+
+        <!-- Q1 -->
+        <fieldset>
+        <legend>1. Adjust the slider to however you like.</legend>
+        <input type="range" id="q1Slider" name="q1Slider" min="0" max="100" step="1" value="24">
+        </fieldset>
+
+        <!-- Q2 -->
+        <label for="color">2. Pick your favorite color.</label>
+        <select name="color" id="color" required>
+            <option value="">-- Please choose a color --</option>
+            <option value="red" class="colors" id="red">red</option>
+            <option value="blue" class="colors" id="blue">blue</option>
+            <option value="green" class="colors" id="green">green</option>
+            <option value="brown" class="colors" id="brown">brown</option>
+            <option value="sky-blue" class="colors" id="sky-blue">sky blue</option>
+            <option value="yellow" class="colors" id="yellow">yellow</option>
+            <option value="lime" class="colors" id="lime">lime</option>
+            <option value="pink" class="colors" id="pink">pink</option>
+            <option value="white" class="colors" id="white">white</option>
+            <option value="black" class="colors" id="black">black</option>
+            <option value="gray" class="colors" id="gray">gray</option>
+            <option value="light-gray" class="colors" id="light-gray">light gray</option>
+        </select>
+
+        <!-- Q3 -->
+        <p>3. How smart do you think you are? (1–10)</p>
+        
+        <div class="choices">
+            <label for="selfSmart1">1</label>
+            <input type="radio" name="selfSmart" id="selfSmart1" value="1" />
+
+            <label for="selfSmart2">2</label>
+            <input type="radio" name="selfSmart" id="selfSmart2" value="2" />
+
+            <label for="selfSmart3">3</label>
+            <input type="radio" name="selfSmart" id="selfSmart3" value="3" />
+
+            <label for="selfSmart4">4</label>
+            <input type="radio" name="selfSmart" id="selfSmart4" value="4" />
+
+            <label for="selfSmart5">5</label>
+            <input type="radio" name="selfSmart" id="selfSmart5" value="5" />
+
+            <label for="selfSmart6">6</label>
+            <input type="radio" name="selfSmart" id="selfSmart6" value="6" />
+
+            <label for="selfSmart7">7</label>
+            <input type="radio" name="selfSmart" id="selfSmart7" value="7" />
+
+            <label for="selfSmart8">8</label>
+            <input type="radio" name="selfSmart" id="selfSmart8" value="8" />
+            
+            <label for="selfSmart9">9</label>
+            <input type="radio" name="selfSmart" id="selfSmart9" value="9" />
+
+            <label for="selfSmart10">10</label>
+            <input type="radio" name="selfSmart" id="selfSmart10" value="10" />
+        </div>
+
+
+        <!-- Q4 -->
+        <p>4. How smart do others think you are? (1–10)</p>
+
+        <div class="choices">
+            <label for="othersSmart1">1</label>
+            <input type="radio" name="othersSmart" id="othersSmart1" value="1" />
+
+            <label for="othersSmart2">2</label>
+            <input type="radio" name="othersSmart" id="othersSmart2" value="2" />
+
+            <label for="othersSmart3">3</label>
+            <input type="radio" name="othersSmart" id="othersSmart3" value="3" />
+
+            <label for="othersSmart4">4</label>
+            <input type="radio" name="othersSmart" id="othersSmart4" value="4" />
+
+            <label for="othersSmart5">5</label>
+            <input type="radio" name="othersSmart" id="othersSmart5" value="5" />
+
+            <label for="othersSmart6">6</label>
+            <input type="radio" name="othersSmart" id="othersSmart6" value="6" />
+
+            <label for="othersSmart7">7</label>
+            <input type="radio" name="othersSmart" id="othersSmart7" value="7" />
+
+            <label for="othersSmart8">8</label>
+            <input type="radio" name="othersSmart" id="othersSmart8" value="8" />
+
+            <label for="othersSmart9">9</label>
+            <input type="radio" name="othersSmart" id="othersSmart9" value="9" />
+
+            <label for="othersSmart10">10</label>
+            <input type="radio" name="othersSmart" id="othersSmart10" value="10" />
+        </div> 
+
+        <p>5. Click this button as many time as you like.</p>
+        <button type="button" class="spam">Click Me!</button>
+        
+        <button type="submit" class="submit">Reveal my affinity</button>
+    </form>
+
+        <footer id="footer">
+            <ul class="whole-list">
+                <ul>
+                    <li class="list-head"><a href="index.html">home</a></li>
+                    <li class="list-head"><a href="./about.html">about</a></li>
+                    <ul class="icons">
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-threads"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li class="list-head"><a href="./locations.html">sites</a></li>
+                    <li><a href="./locations.html">volcanic village</a></li>
+                    <li><a href="./locations.html?step=1">capital city</a></li>
+                    <li><a href="./locations.html?step=3">floating island</a></li>
+                    <li><a href="./locations.html?step=2">meridian island</a></li>
+                </ul>
+                <ul>
+                    <li class="list-head">magic</li>
+                    <li><a href="./magic.html">magic elements</a></li>
+                    <li><a href="#">magic testing</a></li>
+                </ul>
+                <ul>
+                    <li class="list-head"><a href="./contact.html">contact us</a></li>
+                    <li class="s-box"><a href="./contact.html#faq">FAQ</a></li>
+                    <li>phone: 153ka1-7rav315</li>
+                    <li>email: isekai-travels@fantasymail.com</li>
+                </ul>
+            </ul>
+            <p><i class="fa-regular fa-copyright"></i>copyrighted. All rights reserved. Images are generated by AI, please do not take this seriously.</p>
+        </footer>
+    </main>
+</body>
+</html>
