@@ -122,8 +122,8 @@ nav{
     .element {
         border-radius: 10px;
         *{
-            top: 40%;
-            left: 5%;
+            top: 30%;
+            left: 3%;
         }
     }
     .site{
@@ -156,6 +156,7 @@ nav{
         font-family: "Mystery Quest", system-ui;
         letter-spacing: 1.5px;
         font-size: 20px;
+        line-height: 1.5;
     }
     .fire{
         background-image: url(./fire.jpeg);
